@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "eslint": "^4.19.1"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb": "^16.1.0"
+  },
+  "name": "Adrian",
+  "version": ".0.0.1",
+  "description": "Implementing LIFO and FIFO",
+  "main": "scripts/main.js",
+  "repository": "NA",
+  "license": "yes",
+  "private": false
+}
