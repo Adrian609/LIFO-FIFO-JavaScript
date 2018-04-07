@@ -17,7 +17,7 @@ function lifo(getTextArea) {
 
     li.innerText = storedText;
     list.appendChild(li);
-    deleteFifo();
+    deleteFirstLast();
 }
 
 function fifo(getTextArea) {
@@ -30,8 +30,8 @@ function fifo(getTextArea) {
     list.appendChild(li);
 }
 
-function deleteFifo(){
-    var z = document.getElementById("fifo-list");
+function deleteFirstLast(){
+    //var z = document.getElementById("fifo-list");
     var x = document.getElementsByTagName("li")[0];
     var q = document.getElementsByTagName("li")[10];
     var y = document.getElementsByTagName("li").length;
