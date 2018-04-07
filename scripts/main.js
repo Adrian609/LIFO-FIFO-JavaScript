@@ -1,31 +1,27 @@
 document.getElementById("submit-btn").addEventListener("click", (event) => {
-    //event.preventDefault();
-
+    event.preventDefault();
+    let getTextArea = document.getElementById("textArea");
     let inputText = document.getElementById("textArea");
-    let storedText = localStorage.getItem("textArea");
-
-    var listItem = storedText;
     localStorage.setItem("textArea", inputText.value);
 
-    lifo(inputText, e);
-    fifo(storedText, e);
+    lifo(getTextArea);
+    fifo(getTextArea);
 
 });
 
-function lifo(listItem1,e) {
-    e.preventDefault();
-
+function lifo(getTextArea) {
+    let storedText = localStorage.getItem("textArea");
     let list = document.getElementById("list");
     let li = document.createElement("li");
-    li.innerText = listItem1;
+    li.innerText = storedText;
     list.appendChild(li);
 }
 
-function fifo(listItem2, e) {
-    e.preventDefault();
+function fifo(getTextArea) {
+    let storedText = localStorage.getItem("textArea");
     let list = document.getElementById("list-2");
     let li = document.createElement("li");
-    li.innerText = listItem2;
+    li.innerText = storedText;
     list.appendChild(li);
 }
 
